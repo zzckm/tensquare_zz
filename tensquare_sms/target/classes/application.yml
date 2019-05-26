@@ -1,0 +1,14 @@
+server:
+  port: 9009
+spring:
+  application:
+    name: tensquare_sms
+  rabbitmq:
+    host: 192.168.200.128
+aliyun:
+  sms:
+    accessKeyId: LTAIJnRL1f2GJ1Fp
+    accessKeySecret: UJ5QqtV7pxM7TgL8htn5te2ncNCA25
+    template_code: SMS_163720663 #末班编号
+    sign_name: ToTree技术 #签名名称
+

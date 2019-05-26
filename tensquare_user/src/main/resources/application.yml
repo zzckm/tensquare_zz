@@ -1,0 +1,27 @@
+server: 
+  port: 9008
+spring: 
+  application:  
+    name: tensquare-user #指定服务名
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.200.128:3306/tensquare_user?characterEncoding=UTF8
+    username: root
+    password: 1234
+  jpa: 
+    database: mysql
+    show-sql: true
+  redis:
+    host: 192.168.200.128
+  rabbitmq:
+    host: 192.168.200.128
+jwt:
+  config:
+    key: totree
+    ttl: 3600000 #一小时 60x60x1000
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:6868/eureka/
+  instance:
+    prefer-ip-address: true #是否可以跨域访问  flase就只能所有模块都在本地访问了
